@@ -1,0 +1,2 @@
+Prefix plugins/PlotUnivariate/example/
+Plugin PlotUnivariate inputfile parameters.univariate.txt outputfile univariate.pdf
