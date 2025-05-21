@@ -25,7 +25,8 @@ output <- function(outputfile) {
 AlvMac <- readRDS(paste(pfix, parameters["dataset", 2], sep="/"))
 BP.5 <- readRDS(paste(pfix, parameters["results", 2], sep="/"))
 goid <- parameters["GOid", 2]
-
+#print(str(AlvMac))
+write.csv(AlvMac@phenoData@data$Animal, paste(outputfile, "csv", sep="."))
 pdf(outputfile)
 ###################################################
 ### code chunk number 21: GOexpress-UsersGuide.Rnw:543-547
